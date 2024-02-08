@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Asher404QQ/config-environment.git
+          repos:
+            product-stock-service-repo:
+              uri: https://github.com/Asher404QQ/config-environment.git
+              pattern: product-stock-service/*
+              search-paths:
+                - product-stock-service-config/{profile}

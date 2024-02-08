@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: product-stock-service
+  config:
+    import: "configserver:"
+  profiles:
+    active: dev
