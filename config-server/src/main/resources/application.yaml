@@ -15,3 +15,8 @@ spring:
               pattern: product-stock-service/*
               search-paths:
                 - product-stock-service-config/{profile}
+            product-unity-service-repo:
+              uri: https://github.com/Asher404QQ/config-environment.git
+              pattern: product-unity-service/*
+              search-paths:
+                - product-unity-service-config/{profile}
